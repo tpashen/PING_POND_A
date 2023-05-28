@@ -1,6 +1,9 @@
 #1 
 from pygame import * 
 
+win_width = 600
+win_height = 500
+
 class GameSprite(sprite.Sprite):
     def __init__(self, player_image, player_y, player_speed,width,height):
         super().__init__()
@@ -43,8 +46,7 @@ while game:
             speed_y *= 1
 #4
 back = (200, 255, 255)
-win_width = 600
-win_height = 500
+
 window = display.set_mode ((win_width, win_height))
 window.fill(back)
 
