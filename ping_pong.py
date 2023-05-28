@@ -1,6 +1,7 @@
 #1 
 from pygame import * 
-
+win_width =  700
+win_height = 500
 
 class GameSprite(sprite.Sprite):
     def __init__(self, player_image, player_y, player_speed,width,height):
