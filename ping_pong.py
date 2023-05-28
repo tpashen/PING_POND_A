@@ -40,7 +40,7 @@ while game:
         ball.rect.x += speed_x
         ball.rect.y += speed y
         if sprite.collide_rect(racket1, ball) or sprite.collide_rect (racket2, ball):
-            speed_x *= 1
+            speed_x *= -1
             speed_y *= 1
 #4
 
