@@ -21,6 +21,7 @@ class GameSprite(sprite.Sprite):
         window.blit(self.image, (self.rect.x , self.rect.y))
 #2
 class Player(GameSprite):
+    keys = key.get_pressed()
     def update_r(self):
         if keys[K_UP] and self.rect.y > 5:
             self.rect.y -= self.speed
