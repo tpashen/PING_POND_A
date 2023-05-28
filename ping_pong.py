@@ -4,6 +4,8 @@ from pygame import *
 win_width = 600
 win_height = 500
 back = (200, 255, 255)
+window = display.set_mode ((win_width, win_height))
+window.fill(back)
 
 class GameSprite(sprite.Sprite):
     def __init__(self, player_image, player_y, player_speed,width,height):
@@ -45,11 +47,6 @@ while game:
         if sprite.collide_rect(racket1, ball) or sprite.collide_rect (racket2, ball):
             speed_x *= -1
             speed_y *= 1
-#4
-back = (200, 255, 255)
-
-window = display.set_mode ((win_width, win_height))
-window.fill(back)
 
 game = True
 finish = False
