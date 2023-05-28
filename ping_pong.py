@@ -14,8 +14,6 @@ class GameSprite(sprite.Sprite):
 
     def reset(self):
         window.blit(self.image, (self.rect.x , self.rect.y))
-
-
 #2
 class Player(GameSprite):
     def update_r(self):
