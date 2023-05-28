@@ -8,7 +8,7 @@ window = display.set_mode ((win_width, win_height))
 window.fill(back)
 
 class GameSprite(sprite.Sprite):
-    def __init__(self, player_image, player_y, player_speed,width,height):
+    def __init__(self, player_image, player_y,player_x, player_speed,width,height):
         super().__init__()
 
         self.image = transform.scale(image.load(player_image), (width, height))
